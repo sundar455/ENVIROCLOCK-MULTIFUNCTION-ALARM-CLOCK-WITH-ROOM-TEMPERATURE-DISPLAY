@@ -1,5 +1,6 @@
 # ENVIROCLOCK-MULTIFUNCTION-ALARM-CLOCK-WITH-ROOM-TEMPERATURE-DISPLAY
 EnviroClock is a simple project using LPC2148 that shows the current time, alarm, and room temperature on an LCD. Users can set or change the time and alarm using a keypad. When the alarm time is reached, a buzzer sounds. The system combines clock, temperature sensing, and alarm features in one easy-to-use device.
+
 #PROJECT WORK FLOW:
 In this project, first the required peripherals such as the LCD, LEDs, keypad, RTC, ADC (for LM35) and external interrupt are initialized inside the main function before entering the super loop. 
 Inside the continuous loop, the system reads the current time and date from the on-chip RTC and displays it on the LCD along with the day information. And additionally reads the current room temperature from LM35 sensor and display it on LCD.  If the current time matches with the alarm time, activate the buzzer to alert the user. To stop the alarm user, need to press the alarm stop button otherwise after one minute alarm need to stop.
